@@ -1,11 +1,11 @@
-﻿using AuthIdentity.Core.DTOs;
-using AuthIdentity.Core.Entities;
-using AuthIdentity.Core.Services;
+﻿using PLMS.Core.DTOs;
+using PLMS.Core.Entities;
+using PLMS.Core.Services;
 using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
-namespace AuthIdentity.Service.Services
+namespace PLMS.Service.Services
 {
     public class AuthIdentityUserService(UserManager<AuthIdentityUser> userManager, IMapper mapper) : IAuthIdentityUserService
     {

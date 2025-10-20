@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace AuthIdentity.Repository.Configurations
+namespace PLMS.Repository.Configurations
 {
     public class IdentityUserRoleConfiguration : IEntityTypeConfiguration<IdentityUserRole<string>>
     {

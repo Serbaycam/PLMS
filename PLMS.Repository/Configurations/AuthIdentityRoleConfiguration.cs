@@ -1,8 +1,8 @@
-﻿using AuthIdentity.Core.Entities;
+﻿using PLMS.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace AuthIdentity.Repository.Configurations
+namespace PLMS.Repository.Configurations
 {
     public class AuthIdentityRoleConfiguration : IEntityTypeConfiguration<AuthIdentityRole>
     {

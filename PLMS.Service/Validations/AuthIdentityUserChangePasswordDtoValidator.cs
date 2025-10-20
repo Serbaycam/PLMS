@@ -1,7 +1,7 @@
-﻿using AuthIdentity.Core.DTOs;
+﻿using PLMS.Core.DTOs;
 using FluentValidation;
 
-namespace AuthIdentity.Service.Validations
+namespace PLMS.Service.Validations
 {
     public class AuthIdentityUserChangePasswordDtoValidator : AbstractValidator<AuthIdentityUserChangePasswordDto>
     {

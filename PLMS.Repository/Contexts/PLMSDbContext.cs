@@ -1,11 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using PLMS.Core.Entities;
 using PLMS.Core.Entity;
 using System.Reflection;
 
 namespace PLMS.Repository.Contexts
 {
-    public class PLMSDbContext(DbContextOptions<PLMSDbContext> options) : DbContext(options)
+    public class PLMSDbContext(DbContextOptions<PLMSDbContext> options) : IdentityDbContext<AuthIdentityUser, AuthIdentityRole, string>(options)
     {
         DbSet<Color> Colors { get; set; }
         DbSet<Model> Models { get; set; }

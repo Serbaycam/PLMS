@@ -1,6 +1,6 @@
-﻿using AuthIdentity.Core.DTOs;
+﻿using PLMS.Core.DTOs;
 
-namespace AuthIdentity.Core.Services
+namespace PLMS.Core.Services
 {
     public interface IAuthIdentityUserService
     {

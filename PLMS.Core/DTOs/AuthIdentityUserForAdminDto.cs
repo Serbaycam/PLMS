@@ -1,6 +1,6 @@
-﻿using AuthIdentity.Core.Entities;
+﻿using PLMS.Core.Entities;
 
-namespace AuthIdentity.Core.DTOs
+namespace PLMS.Core.DTOs
 {
     public class AuthIdentityUserForAdminDto:AuthIdentityUser
     {

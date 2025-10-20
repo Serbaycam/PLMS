@@ -1,4 +1,4 @@
-﻿namespace AuthIdentity.Core.DTOs
+﻿namespace PLMS.Core.DTOs
 {
     public class AuthIdentityUserDto
     {

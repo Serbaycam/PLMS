@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.7.34202.233
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11012.119 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PLMS.Core", "PLMS.Core\PLMS.Core.csproj", "{ED1CDA38-EB84-42DC-87C3-3E613E07E4BC}"
 EndProject
@@ -10,14 +10,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PLMS.Service", "PLMS.Service\PLMS.Service.csproj", "{165030F5-A235-4F08-9C7B-49C3A9E390E4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PLMS.Web", "PLMS.Web\PLMS.Web.csproj", "{52829531-D82B-4E80-86A6-213C0105FF25}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PLMS.Caching", "PLMS.Caching\PLMS.Caching.csproj", "{24FCE211-9136-43F3-9159-F3C1D6F2A57E}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthIdentity.Core", "AuthIdentity.Core\AuthIdentity.Core.csproj", "{C77D68B6-9FD1-40CC-B15D-58164D06B415}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthIdentity.Service", "AuthIdentity.Service\AuthIdentity.Service.csproj", "{64329D60-9337-4740-8874-B71574B8D314}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthIdentity.Repository", "AuthIdentity.Repository\AuthIdentity.Repository.csproj", "{C7E97E3A-5CA1-4622-8856-F396D37F0B45}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,22 +33,6 @@ Global
 		{52829531-D82B-4E80-86A6-213C0105FF25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52829531-D82B-4E80-86A6-213C0105FF25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52829531-D82B-4E80-86A6-213C0105FF25}.Release|Any CPU.Build.0 = Release|Any CPU
-		{24FCE211-9136-43F3-9159-F3C1D6F2A57E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{24FCE211-9136-43F3-9159-F3C1D6F2A57E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{24FCE211-9136-43F3-9159-F3C1D6F2A57E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{24FCE211-9136-43F3-9159-F3C1D6F2A57E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C77D68B6-9FD1-40CC-B15D-58164D06B415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C77D68B6-9FD1-40CC-B15D-58164D06B415}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C77D68B6-9FD1-40CC-B15D-58164D06B415}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C77D68B6-9FD1-40CC-B15D-58164D06B415}.Release|Any CPU.Build.0 = Release|Any CPU
-		{64329D60-9337-4740-8874-B71574B8D314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{64329D60-9337-4740-8874-B71574B8D314}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{64329D60-9337-4740-8874-B71574B8D314}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{64329D60-9337-4740-8874-B71574B8D314}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C7E97E3A-5CA1-4622-8856-F396D37F0B45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C7E97E3A-5CA1-4622-8856-F396D37F0B45}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C7E97E3A-5CA1-4622-8856-F396D37F0B45}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C7E97E3A-5CA1-4622-8856-F396D37F0B45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

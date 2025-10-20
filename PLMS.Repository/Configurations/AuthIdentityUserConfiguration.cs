@@ -1,8 +1,8 @@
-﻿using AuthIdentity.Core.Entities;
+﻿using PLMS.Core.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
-namespace AuthIdentity.Repository.Configurations
+namespace PLMS.Repository.Configurations
 {
     public class AuthIdentityUserConfiguration : IEntityTypeConfiguration<AuthIdentityUser>
     {

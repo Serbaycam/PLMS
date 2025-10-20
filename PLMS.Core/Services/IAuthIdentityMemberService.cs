@@ -1,8 +1,8 @@
-﻿using AuthIdentity.Core.DTOs;
-using AuthIdentity.Core.Entities;
+﻿using PLMS.Core.DTOs;
+using PLMS.Core.Entities;
 using Microsoft.AspNetCore.Identity;
 
-namespace AuthIdentity.Core.Services
+namespace PLMS.Core.Services
 {
     public interface IAuthIdentityMemberService
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace AuthIdentity.Core.Entities
+namespace PLMS.Core.Entities
 {
     public class AuthIdentityUser : IdentityUser
     {
