@@ -1,5 +1,4 @@
 ﻿using FluentValidation;
-using Microsoft.AspNetCore.Identity;
 
 namespace PLMS.Web.Extensions
 {
@@ -37,7 +36,6 @@ namespace PLMS.Web.Extensions
             services.AddFluentValidationAutoValidation();
             services.AddFluentValidationClientsideAdapters();
             services.AddValidatorsFromAssemblyContaining(typeof(ProductDtoValidator));
-            services.AddValidatorsFromAssemblyContaining(typeof(AuthIdentityUserRegisterDtoValidator));
 
         }
 
