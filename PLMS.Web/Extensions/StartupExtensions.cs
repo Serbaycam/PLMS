@@ -21,7 +21,7 @@ namespace PLMS.Web.Extensions
                 options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
                 options.Lockout.MaxFailedAccessAttempts = 3;
 
-            }).AddEntityFrameworkStores<AuthIdentityDbContext>();
+            }).AddEntityFrameworkStores<PLMSDbContext>();
         }
 
         public static void AddConfigureSecurityStampWithExt(this IServiceCollection services)
@@ -63,7 +63,6 @@ namespace PLMS.Web.Extensions
         public static void AddAutoMapperWithExt(this IServiceCollection services)
         {
             services.AddAutoMapper(Assembly.GetAssembly(typeof(MapProfile)));
-            services.AddAutoMapper(Assembly.GetAssembly(typeof(AuthIdentityMapProfile)));
         }
 
         public static void AddNotifyWithExt(this IServiceCollection services)
@@ -73,13 +72,6 @@ namespace PLMS.Web.Extensions
 
         public static void AddDbContexesWithExt(this IServiceCollection services, WebApplicationBuilder builder)
         {
-            services.AddDbContext<AuthIdentityDbContext>(x =>
-            {
-                x.UseSqlServer(builder.Configuration.GetConnectionString("AuthIdentityConnection"), option =>
-                {
-                    option.MigrationsAssembly(Assembly.GetAssembly(typeof(AuthIdentityDbContext)).GetName().Name);
-                });
-            });
             services.AddDbContext<PLMSDbContext>(x =>
             {
                 x.UseSqlServer(builder.Configuration.GetConnectionString("PLMSConnection"), option =>

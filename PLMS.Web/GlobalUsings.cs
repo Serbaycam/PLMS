@@ -1,9 +1,9 @@
-﻿global using AuthIdentity.Core.DTOs;
-global using AuthIdentity.Core.Entities;
-global using AuthIdentity.Core.Services;
-global using AuthIdentity.Repository.Contexts;
-global using AuthIdentity.Service.Mapping;
-global using AuthIdentity.Service.Validations;
+﻿global using PLMS.Core.DTOs;
+global using PLMS.Core.Entities;
+global using PLMS.Core.Services;
+global using PLMS.Repository.Contexts;
+global using PLMS.Service.Mapping;
+global using PLMS.Service.Validations;
 global using Autofac;
 global using Autofac.Extensions.DependencyInjection;
 global using AutoMapper;

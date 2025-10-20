@@ -1,6 +1,4 @@
-﻿using AuthIdentity.Service.Services;
-
-namespace PLMS.Web.Modules
+﻿namespace PLMS.Web.Modules
 {
     public class RepoServiceModule : Autofac.Module
     {
@@ -13,15 +11,11 @@ namespace PLMS.Web.Modules
 
             var apiAssembly = Assembly.GetExecutingAssembly();
             var repoAssembly = Assembly.GetAssembly(typeof(PLMSDbContext));
-            var repoAssembly2 = Assembly.GetAssembly(typeof(AuthIdentityDbContext));
             var serviceAssembly = Assembly.GetAssembly(typeof(MapProfile));
-            var serviceAssembly2 = Assembly.GetAssembly(typeof(AuthIdentityMapProfile));
 
 
             builder.RegisterAssemblyTypes(apiAssembly, repoAssembly, serviceAssembly).Where(x => x.Name.EndsWith("Repository")).AsImplementedInterfaces().InstancePerLifetimeScope();
             builder.RegisterAssemblyTypes(apiAssembly, repoAssembly, serviceAssembly).Where(x => x.Name.EndsWith("Service")).AsImplementedInterfaces().InstancePerLifetimeScope();
-            builder.RegisterAssemblyTypes(apiAssembly, repoAssembly2, serviceAssembly2).Where(x => x.Name.EndsWith("Repository")).AsImplementedInterfaces().InstancePerLifetimeScope();
-            builder.RegisterAssemblyTypes(apiAssembly, repoAssembly2, serviceAssembly2).Where(x => x.Name.EndsWith("Service")).AsImplementedInterfaces().InstancePerLifetimeScope();
 
 
         }
